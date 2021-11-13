@@ -5,7 +5,7 @@ Usage:
 Run this command to complete installation:
 
 ```
-npx install-peerdeps@2.0.1 --dev -o --yarn @sigmagf/eslint-config
+npx install-peerdeps --dev -o --yarn @sigmagf/eslint-config
 ```
 
 Insert this lines in package.json:
