@@ -31,7 +31,7 @@ module.exports = {
     "jest/globals": true
   },
   rules: {
-    "no-use-before-define": "off",
+    "prettier/prettier": "warn",
 
     /* ============================== JEST ============================== */
     "jest/no-disabled-tests": "warn",
@@ -61,7 +61,7 @@ module.exports = {
 
     /* ============================ TYPESCRIPT ============================ */
     "@typescript-eslint/explicit-function-return-type": [
-      "error",
+      "warn",
       {
         allowExpressions: true,
       },
@@ -80,7 +80,7 @@ module.exports = {
     /* ========================== END TYPESCRIPT ========================== */
 
     /* ============================== IMPORT ============================== */
-    "import/newline-after-import": "error",
+    "import/newline-after-import": "warn",
 
     /* Enable devDependencies import */
     "import/no-extraneous-dependencies": "off",
@@ -109,12 +109,14 @@ module.exports = {
     /* ============================ END IMPORT ============================ */
 
     /* ============================== COMMON ============================== */
-    "newline-before-return": "error",
+    "prefer-const": "warn",
+    
+    "newline-before-return": "warn",
 
     /* Enable use of globals */
     "no-restricted-globals": "off",
 
-    /* Disabele force compact arrow functions */
+    /* Disable force compact arrow functions */
     "arrow-body-style": "off",
 
     /* Enable nameless functions */
@@ -144,7 +146,8 @@ module.exports = {
     "no-alert": "off",
 
     /* Defines max row length */
-    "max-len": ["warn", { code: 150 }],
+    // "max-len": ["warn", { code: 150 }],
+    "max-len": "off",
     /* ============================ END COMMON ============================ */
   },
   settings: {
