@@ -133,7 +133,7 @@ module.exports = {
 
     /* Fix unused vars */
     "no-unused-vars": "off",
-    "@typescript-eslint/no-unused-vars": "warn",
+    "@typescript-eslint/no-unused-vars": ["warn", { "argsIgnorePattern": "^_" }],
 
     /* Enable empty constructors */
     "no-useless-constructor": "off",
