@@ -26,7 +26,7 @@ const config = require('@sigmagf/eslint-config')
 module.exports = config;
 ```
 
-and prettier.config.js with
+and `prettier.config.js` with
 
 ```javascript
 // .prettier.config.js
