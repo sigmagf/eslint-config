@@ -1,6 +1,7 @@
-name: Node.js Package
+name: Package deploy
 
 on:
+  workflow_dispatch:
   release:
     types: [created]
 
@@ -30,4 +31,4 @@ jobs:
 #           registry-url: https://registry.npmjs.org/
 #       - run: npm publish
 #         env:
-#           NODE_AUTH_TOKEN: ${{ secrets.npm_token }}
+#           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
